@@ -8,22 +8,15 @@
         <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cloud</groupId>
-    <artifactId>fire</artifactId>
+    <groupId>com.fire</groupId>
+    <artifactId>gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>fire</name>
-    <description>spring cloud framework</description>
+    <name>gateway</name>
+    <description>gateway</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
-    <modules>
-        <module>eureka</module>
-        <module>security</module>
-        <module>business</module>
-        <module>gateway</module>
-    </modules>
 
     <dependencies>
         <dependency>
