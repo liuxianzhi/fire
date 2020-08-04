@@ -20,6 +20,8 @@
 
     <modules>
         <module>eureka</module>
+        <module>security</module>
+        <module>business</module>
     </modules>
 
     <dependencies>
