@@ -1,5 +1,6 @@
 package com.fire.gateway.controller;
 
+import com.fire.common.model.ApiResult;
 import com.fire.gateway.model.dto.LoginDTO;
 import com.fire.gateway.service.impl.ReactiveUserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +17,13 @@ public class LoginController {
     private ReactiveUserDetailsServiceImpl reactiveUserDetailsServiceImpl;
 
     @PostMapping("/login")
-    public String login(@RequestBody LoginDTO loginDTO) {
+    public ApiResult login(@RequestBody LoginDTO loginDTO) {
         Mono<UserDetails> admin = reactiveUserDetailsServiceImpl.findByUsername("admin");
         String password = admin.block().getPassword();
         String matchPassword = loginDTO.getPassword();
         if (password.equals(matchPassword)) {
-            return "login success get a token";
+            return ApiResult.success();
         }
-        return "用户名密码错误";
+        return ApiResult.fail("用户名密码错误");
     }
 }

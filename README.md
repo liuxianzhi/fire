@@ -1,6 +1,5 @@
 # 微服务基础架构Spring-Cloud-Fire
-
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![build](https://img.shields.io/badge/build-passing-brightgreen) ![license](https://img.shields.io/badge/license-Apache%202.0-orange)  
 
 A standard style for README files
 
@@ -111,7 +110,6 @@ Standard Readme follows the [Contributor Covenant](http://contributor-covenant.o
 ### Contributors
 
 This project exists thanks to all the people who contribute. 
-<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
 
 
 ## License
