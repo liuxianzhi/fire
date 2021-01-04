@@ -21,8 +21,8 @@
     <modules>
         <module>eureka</module>
         <module>gateway</module>
-        <module>sys</module>
         <module>business</module>
+        <module>common</module>
     </modules>
 
     <dependencies>
